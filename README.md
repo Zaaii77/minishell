@@ -53,14 +53,14 @@
 
 ## Example Usage
 ```bash
-$ minishell$ echo "Hello, World!"
+minishell$ echo "Hello, World!"
 Hello, World!
 
-$ minishell$ export MY_VAR=42
-$ minisehll$ echo $MY_VAR
+minishell$ export MY_VAR=42
+minisehll$ echo $MY_VAR
 42
 
-$ minishell$ ls | grep minishell > output.txt
+minishell$ ls | grep minishell > output.txt
 ```
 
 ## Notes
