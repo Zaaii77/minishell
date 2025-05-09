@@ -17,8 +17,8 @@
 ## How to Build and Run
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd ft_printf/libft/Minishell
+   git clone git@github.com:Zaaii77/minishell.git
+   cd minishell
    ```
 
 2. Compile the project:
