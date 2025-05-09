@@ -60,7 +60,7 @@ $ minishell$ export MY_VAR=42
 $ minisehll$ echo $MY_VAR
 42
 
-$ ls | grep minishell > output.txt
+$ minishell$ ls | grep minishell > output.txt
 ```
 
 ## Notes
