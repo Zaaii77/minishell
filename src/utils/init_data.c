@@ -6,7 +6,7 @@
 /*   By: lowatell <lowatell@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/08 16:29:35 by lowatell          #+#    #+#             */
-/*   Updated: 2025/04/12 00:39:38 by lowatell         ###   ########.fr       */
+/*   Updated: 2025/05/09 15:49:27 by lowatell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,9 +116,6 @@ t_data	*init_data(int ac, char **av, char **env)
 	if (!data->env_list)
 		return (free_tab(data->env), NULL);
 	data->path = get_path(data->env);
-	if (!data->path)
-		return (free_tab(data->env),
-			free_env_copy(data->env_list), free(data), NULL);
 	data->cmd_list = NULL;
 	data->exit_status = 0;
 	data->pipes = NULL;

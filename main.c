@@ -6,7 +6,7 @@
 /*   By: lowatell <lowatell@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 13:00:26 by lowatell          #+#    #+#             */
-/*   Updated: 2025/04/23 22:55:57 by lowatell         ###   ########.fr       */
+/*   Updated: 2025/05/09 15:50:05 by lowatell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,10 +85,8 @@ int	main(int ac, char **av, char **env)
 	data = init_data(ac, av, env);
 	if (!data)
 	{
-		free_data_members(data);
 		free(data);
 		data = NULL;
-		perror("minishell: init_data");
 		return (1);
 	}
 	data->cmd_list = NULL;
